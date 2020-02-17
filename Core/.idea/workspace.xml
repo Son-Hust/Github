@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="82a22f59-916e-4c14-9cac-91114ac7a6bc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XZFp5L2KtjYDCFUr3uCctu8ZGy" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+  </component>
+  <component name="RunManager" selected="Application.PrimeNumber">
+    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Fibonacci" />
+      <module name="Core" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimeNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrimeNumber" />
+      <module name="Core" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PrimeNumber" />
+        <item itemvalue="Application.Fibonacci" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82a22f59-916e-4c14-9cac-91114ac7a6bc" name="Default Changelist" comment="" />
+      <created>1581245889470</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581245889470</updated>
+      <workItem from="1581245899402" duration="5383000" />
+      <workItem from="1581262358118" duration="193000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="28" key="#Inspections" timestamp="1581250628188">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="28" key="#Inspections/0.0.1366.738@0.0.1366.738" timestamp="1581250628188" />
+    <state x="275" y="8" width="816" height="730" key="#Intentions" timestamp="1581251389589">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="8" width="816" height="730" key="#Intentions/0.0.1366.738@0.0.1366.738" timestamp="1581251389589" />
+    <state x="275" y="28" key="#Project_Structure" timestamp="1581245971437">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="28" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1581245971437" />
+    <state width="1367" height="199" key="GridCell.Tab.0.bottom" timestamp="1581256333454">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1367" height="199" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1581256333454" />
+    <state width="1367" height="199" key="GridCell.Tab.0.center" timestamp="1581256333454">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1367" height="199" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1581256333454" />
+    <state width="1367" height="199" key="GridCell.Tab.0.left" timestamp="1581256333454">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1367" height="199" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1581256333454" />
+    <state width="1367" height="199" key="GridCell.Tab.0.right" timestamp="1581256333454">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1367" height="199" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1581256333454" />
+    <state x="184" y="12" key="SettingsEditor" timestamp="1581250669061">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="184" y="12" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1581250669061" />
+    <state x="65" y="0" key="new project wizard" timestamp="1581262558520">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1581262558520" />
+  </component>
+</project>
