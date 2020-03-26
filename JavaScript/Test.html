@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+  <button type="button" onclick="GioiThieu()">Click here!</button>  
+  <script>
+      function GioiThieu(name,year){
+         var name ="Ho ten:"+ name;
+         var namsinh="Nam sinh:"+year;
+         var thongtin=name +"<br>"+namsinh;
+         return thongtin;
+      }
+        var sinhvien="SINH VIEN<hr>"+ GioiThieu("Nguyen Hong Son",1996);
+         document.write(sinhvien);
+    </script>
+</body>
+</html>

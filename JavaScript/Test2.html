@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tinh="Nghe An";
+        var thongtin={
+            name:"Nguyen Hong Son",
+            year:1996,
+            address:tinh,
+            intro:function(){
+                document.write("Ten toi la:"+this.name+"<hr>");
+                document.write("Tuoi:"+this.year+"<hr>");
+                document.write("Que quan:"+this.address);
+            }
+        }
+        thongtin.intro();
+    </script>
+</body>
+</html>
