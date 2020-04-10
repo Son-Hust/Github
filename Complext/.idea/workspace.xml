@@ -22,7 +22,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="Application.Bai2">
+  <component name="RunManager" selected="Application.Bai1">
+    <configuration name="Bai1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bai1" />
+      <module name="Complext" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Bai2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Bai2" />
       <module name="Complext" />
@@ -42,6 +49,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Bai1" />
         <item itemvalue="Application.Bai2" />
         <item itemvalue="Application.Main" />
       </list>
@@ -60,6 +68,8 @@
       <workItem from="1584961517473" duration="4726000" />
       <workItem from="1585054449762" duration="1691000" />
       <workItem from="1585215603977" duration="1131000" />
+      <workItem from="1585534714998" duration="328000" />
+      <workItem from="1585820772271" duration="98000" />
     </task>
     <servers />
   </component>
@@ -71,22 +81,26 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="452" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1584965636486" />
-    <state width="1367" height="199" key="GridCell.Tab.0.bottom" timestamp="1585056173945">
+    <state width="1367" height="199" key="GridCell.Tab.0.bottom" timestamp="1585535098515">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="199" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1585056173945" />
-    <state width="1367" height="199" key="GridCell.Tab.0.center" timestamp="1585056173945">
+    <state width="1367" height="199" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1585535098515" />
+    <state width="1367" height="199" key="GridCell.Tab.0.center" timestamp="1585535098515">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="199" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1585056173945" />
-    <state width="1367" height="199" key="GridCell.Tab.0.left" timestamp="1585056173945">
+    <state width="1367" height="199" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1585535098515" />
+    <state width="1367" height="199" key="GridCell.Tab.0.left" timestamp="1585535098515">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="199" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1585056173945" />
-    <state width="1367" height="199" key="GridCell.Tab.0.right" timestamp="1585056173945">
+    <state width="1367" height="199" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1585535098515" />
+    <state width="1367" height="199" key="GridCell.Tab.0.right" timestamp="1585535098515">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="199" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1585056173945" />
+    <state width="1367" height="199" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1585535098515" />
+    <state x="65" y="0" key="new project wizard" timestamp="1585820877150">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1585820877150" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1585056020645">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

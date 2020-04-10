@@ -1,0 +1,4 @@
+﻿  ExamMang.cpp
+D:\Github\NNLT_20192\ExamMang\ExamMang\ExamMang.cpp(26,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Github\NNLT_20192\ExamMang\ExamMang\ExamMang.cpp(31,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  ExamMang.vcxproj -> D:\Github\NNLT_20192\ExamMang\Debug\ExamMang.exe

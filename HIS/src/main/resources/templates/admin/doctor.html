@@ -110,12 +110,6 @@
                 <span>Add Admin</span>
             </a>
         </li>
-        <li class="nav-item  ">
-            <a class="nav-link" th:href="@{/admin/add-admin}">
-                <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Add Patient</span>
-            </a>
-        </li>
         <li class="nav-item ">
             <a class="nav-link" th:href="@{/admin/edit-my-profile}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -136,23 +130,6 @@
                 <li class="breadcrumb-item active">Overview</li>
             </ol>
 
-            <!-- Icon Cards-->
-
-
-            <!-- Area Chart Example
-            <div class="card mb-3">
-              <div class="card-header">
-                <i class="fas fa-chart-area"></i>
-                Area Chart Example</div>
-              <div class="card-body">
-                <canvas id="myAreaChart" width="100%" height="30"></canvas>
-              </div>
-              <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-            </div> -->
-
-            <!-- DataTables Example -->
-
-
             <div class="card mb-3">
                 <div class="card-header">
                     <i class="fas fa-table"></i>
@@ -171,6 +148,9 @@
                                 <th>Gender</th>
                                 <th>Role</th>
                                 <th>Last-seen</th>
+                                <th>Detail</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
 
 
                             </tr>
@@ -184,6 +164,9 @@
                                 <th>Gender</th>
                                 <th>Role</th>
                                 <th>Last-seen</th>
+                                <th>Detail</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
 
                             </tr>
                             <tbody>
@@ -196,6 +179,9 @@
                                 <td th:text="${temp.gender}"/>
                                 <td th:text="${temp.role}"/>
                                 <td th:text="${temp.lastseen}"/>
+                                <td><a class="btn btn-info">Detail</a></td>
+                                <td><a class="btn btn-primary">Edit</a></td>
+                                <td><a onclick="return confirmAction()" class="btn btn-danger">Delete</a></td>
                             </tr>
 
                             </tbody>
@@ -211,7 +197,7 @@
             <footer class="sticky-footer">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright ©Soumyadip Spring-Boot-JPA 2019</span>
+                        <span>Copyright © Health System Information. All rights reserved.</span>
                     </div>
                 </div>
             </footer>
@@ -273,6 +259,11 @@
     <!-- Demo scripts for this page-->
     <script src="../vendor/js/demo/datatables-demo.js"></script>
     <script src="../vendor/js/demo/chart-area-demo.js"></script>
+    <script>
+        function confirmAction() {
+            return confirm("Do you want Delete?")
+        }
+    </script>
 
 </body>
 
