@@ -1,17 +1,22 @@
 package com.admin.his.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.admin.his.entity.audit.DateAudit;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 
-public class Medicine {
+public class Medicine extends DateAudit {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+    @NotBlank(message = "Không được để trống!")
     private String meName;
+    @NotBlank(message = "Không được để trống")
     private String dosage;
 
     public Medicine() {
@@ -57,6 +62,21 @@ public class Medicine {
         this.note = note;
     }
 
+    @NotBlank(message = "Không được để trống!")
     private String frequency;
     private String note;
+
+    //ManytoOne
+    @ManyToOne(fetch = FetchType.LAZY,optional = false)
+    @JoinColumn(name = "user_id",nullable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    private User user1;
+
+    public User getUser() {
+        return user1;
+    }
+
+    public void setUser(User user) {
+        this.user1 = user;
+    }
 }

@@ -9,12 +9,13 @@ import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 
+import com.admin.his.entity.audit.DateAudit;
 import org.springframework.data.annotation.Transient;
 
 
 @Entity
 @Table(name = "user")
-public class Admin {
+public class Admin{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

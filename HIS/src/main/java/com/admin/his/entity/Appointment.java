@@ -1,20 +1,18 @@
 package com.admin.his.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 
+import com.admin.his.entity.audit.DateAudit;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 import org.springframework.data.annotation.Transient;
 
 
 @Entity
 @Table(name = "app")
-public class Appointment {
+public class Appointment extends DateAudit {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -41,7 +39,6 @@ public class Appointment {
     @Column(name = "regtime")
     @Transient
     private String regtime;
-
 
     public String getRegtime() {
         return regtime;

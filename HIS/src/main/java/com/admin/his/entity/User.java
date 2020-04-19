@@ -1,20 +1,18 @@
 package com.admin.his.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 
+import com.admin.his.entity.audit.DateAudit;
 import org.springframework.data.annotation.Transient;
+
+import java.util.Collection;
 
 
 @Entity
 @Table(name = "user")
-public class User {
+public class User{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -25,6 +23,14 @@ public class User {
     @Email(message = "Email không hợp lệ!")
     @NotEmpty(message = "Email không được để trống!")
     private String email;
+
+    public Collection<Medicine> getMedicines() {
+        return medicines;
+    }
+
+    public void setMedicines(Collection<Medicine> medicines) {
+        this.medicines = medicines;
+    }
 
     @Column(name = "password")
     @Transient
@@ -68,7 +74,20 @@ public class User {
     private String age;
     private String country;
     private String contract;
+    private String address;
 
+    //OnetoMany
+    @OneToMany(mappedBy = "user1",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @OrderBy("user1 ASC")
+    private Collection<Medicine> medicines;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     @Column(name = "confirmation_token")
     private String confirmationToken;

@@ -41,6 +41,7 @@ public class AdminController {
     }
 
 
+    //Return list Patient
     @RequestMapping("/user-details")
     public String index(Model model) {
 
@@ -78,6 +79,8 @@ public class AdminController {
         return "admin/user";
     }
 
+
+    //Return list doctor
     @RequestMapping("/doctor-details")
     public String doctorDetails(Model model) {
 
@@ -118,6 +121,8 @@ public class AdminController {
         return "admin/doctor";
     }
 
+
+    //Return list Doctor
     @RequestMapping("/admin-details")
     public String adminDetails(Model model) {
 
@@ -204,18 +209,19 @@ public class AdminController {
 
         admin.setRole("ROLE_DOCTOR");
 
-        admin.setPassword("default");
+        admin.setPassword("doctor");
 
         admin.setEnabled(true);
 
-        admin.setConfirmationToken("ByAdmin-Panel");
+        admin.setConfirmationToken("AddByAdmin");
 
         System.out.println(admin);
 
         adminServiceImplementation.save(admin);
 
-        return "redirect:/admin/user-details";
+        return "redirect:/admin/doctor-details";
     }
+
 
 
     @GetMapping("/add-admin")
@@ -258,24 +264,81 @@ public class AdminController {
 
 
     @PostMapping("/save-admin")
-    public String saveEmploye(@ModelAttribute("doctor") Admin admin) {
-
-        // save the employee
-        //	admin.setId(0);
+    public String saveEmploye(@ModelAttribute("admin") Admin admin) {
 
         admin.setRole("ROLE_ADMIN");
 
-        admin.setPassword("default");
+        admin.setPassword("admin");
 
         admin.setEnabled(true);
 
-        admin.setConfirmationToken("ByAdmin-Panel");
+        admin.setConfirmationToken("AddByAdmin");
+
+        System.out.println(admin);
+
+        adminServiceImplementation.save(admin);
+
+        return "redirect:/admin/admin-details";
+    }
+
+    //Add Patient
+
+    @GetMapping("/add-patient")
+    public String showFormAddPatient(Model theModel) {
+
+
+        // get last seen
+        String username = "";
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        if (principal instanceof UserDetails) {
+            username = ((UserDetails) principal).getUsername();
+            String Pass = ((UserDetails) principal).getPassword();
+            System.out.println("One + " + username + "   " + Pass);
+
+
+        } else {
+            username = principal.toString();
+            System.out.println("Two + " + username);
+        }
+
+        Admin admin1 = adminServiceImplementation.findByEmail(username);
+
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Date now = new Date();
+
+        String log = now.toString();
+
+        admin1.setLastseen(log);
+
+        adminServiceImplementation.save(admin1);
+
+
+        // create model attribute to bind form data
+        Admin admin = new Admin();
+
+        theModel.addAttribute("doctor", admin);
+
+        return "admin/addPatient";
+    }
+
+
+    @PostMapping("/save-patient")
+    public String savePatient(@ModelAttribute("patient") Admin admin) {
+
+
+        admin.setRole("ROLE_USER");
+
+        admin.setPassword("user");
+
+        admin.setEnabled(true);
+        admin.setConfirmationToken("AddByAdmin");
 
         System.out.println(admin);
 
         adminServiceImplementation.save(admin);
 
         return "redirect:/admin/user-details";
+
     }
 
     @GetMapping("/edit-my-profile")
@@ -322,7 +385,7 @@ public class AdminController {
         adminServiceImplementation.save(admin);
 
         // use a redirect to prevent duplicate submissions
-        return "redirect:/admin/user-details";
+        return "redirect:/admin/admin-details";
     }
 
 

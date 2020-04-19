@@ -28,7 +28,7 @@ public class RegisterController {
 	//private BCryptPasswordEncoder bCryptPasswordEncoder;
 	private UserService userService;
 	private EmailService emailService;
-	
+
 	@Autowired
 	public RegisterController(
 			UserService userService, EmailService emailService) {

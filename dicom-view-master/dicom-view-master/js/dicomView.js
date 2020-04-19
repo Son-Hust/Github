@@ -3,7 +3,7 @@ new Vue({
     data: {
         isPc: !(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)),
         wadouri: 'wadouri:',
-        url: './MRHead-8-slices.dcm',
+        url: './dicomImage/test.dcm',
         image: null,
         activeIndex: 0,
         playHandler: null,

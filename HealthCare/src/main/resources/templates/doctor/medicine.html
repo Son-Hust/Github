@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Medicine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="container my-2">
+    <h1>Medicine View</h1>
+    <div class="card">
+        <div class="card-body">
+            <table class="table table-striped table-responsive-md">
+                <thead>
+                <tr>
+                    <th>Drug Name</th>
+                    <th>Dosage</th>
+                    <th>Frequency</th>
+                    <th>Note</th>
+                    <th>CreatAt</th>
+                    <th>UpdateAt</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="user : ${user}">
+                    <td th:text="${user.username}"></td>
+                    <td th:text="${user.firstname}"></td>
+                    <td th:text="${user.lastname}"></td>
+                    <td th:text="${user.gender}"></td>
+                    <td th:text="${user.password}"></td>
+                    <td th:text="${user.age}"></td>
+                    <td><a th:href="@{/user/edit/{id}(id=${user.id})}" class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a></td>
+                    <td><a onclick="return confirmAction()" th:href="@{/user/delete/{id}(id=${user.id})}" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a></td>
+
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">Patient Record</button>
+        <button type="button" class="btn btn-success">Patient Film</button>
+        <button type="button" class="btn btn-info">Appointment</button>
+    </div>
+</div>
+<script>
+    function confirmAction() {
+        return confirm("Do you want Delete?")
+    }
+</script>
+</body>
+
+</html>

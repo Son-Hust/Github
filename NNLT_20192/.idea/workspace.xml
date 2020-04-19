@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8fed99b9-d89c-4ee6-b321-a9f6e6d2aa37" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/NNLT_20192.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/Controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/Controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/Controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/Controller/DoctorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/Controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/Controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/entity/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/entity/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/entity/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/entity/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/entity/Medicine.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/entity/Medicine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/java/com/admin/his/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/resources/templates/admin/addAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/resources/templates/admin/addAdmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/resources/templates/admin/addDoctor.html" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/resources/templates/admin/addDoctor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/resources/templates/admin/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/resources/templates/admin/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/resources/templates/admin/appointment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/resources/templates/admin/appointment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/resources/templates/admin/doctor.html" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/resources/templates/admin/doctor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/resources/templates/admin/updateMyProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/resources/templates/admin/updateMyProfile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/resources/templates/admin/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/resources/templates/admin/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HIS/src/main/resources/templates/doctor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../HIS/src/main/resources/templates/doctor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/NNLT_20192/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/NNLT_20192/v16/Browse.VC.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++Core/.vs/C++Core/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++Core/.vs/C++Core/v16/Browse.VC.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++Core/.vs/C++Core/v16/ipch/AutoPCH/1d5b82596eb9d230/C++CORE.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++Core/C++Core.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++Core/C++Core.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++Core/C++Core.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++Core/C++Core.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++Core/C++Core.vcxproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/.vs/ExamMang/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/.vs/ExamMang/v16/Browse.VC.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/.vs/ExamMang/v16/ipch/AutoPCH/bae5b2af4cc26e90/EXAMMANG.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/Debug/ExamMang.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/Debug/ExamMang.ilk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/Debug/ExamMang.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang/Debug/ExamMang.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang/Debug/ExamMang.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang/Debug/ExamMang.tlog/CL.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang/Debug/ExamMang.tlog/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang/Debug/ExamMang.tlog/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang/Debug/ExamMang.tlog/ExamMang.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang/Debug/ExamMang.tlog/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang/Debug/ExamMang.tlog/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang/Debug/ExamMang.tlog/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang/Debug/vc142.idb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang/Debug/vc142.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang/ExamMang.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang/ExamMang.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang/ExamMang.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamMang/ExamMang/ExamMang.vcxproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example1/.vs/Example1/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example1/.vs/Example1/v16/Browse.VC.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example1/.vs/Example1/v16/ipch/AutoPCH/87c0e1d3c290e4d0/EXAMPLE1.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example1/Example1.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example1/Example1/Example1.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example1/Example1/Example1.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example1/Example1/Example1.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example1/Example1/Example1.vcxproj.user" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1aar44J5dTwzFVnlEUZP4qMjF0C" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Homework/CMakeLists.txt" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CMake" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8fed99b9-d89c-4ee6-b321-a9f6e6d2aa37" name="Default Changelist" comment="" />
+      <created>1586984354570</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586984354570</updated>
+      <workItem from="1586984370725" duration="1745000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586986118114">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="137" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1586986118114" />
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1586985949020">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586985949020" />
+    <state x="184" y="13" key="SettingsEditor" timestamp="1586985635869">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="184" y="13" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1586985635869" />
+  </component>
+</project>

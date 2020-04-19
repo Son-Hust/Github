@@ -27,7 +27,7 @@ public class DoctorController {
 	
 	private AppointmentServiceImplementation appointmentServiceImplementation;
 
-	
+
 	@Autowired
 	public DoctorController(UserService userService,AdminServiceImplementation obj,
 			AppointmentServiceImplementation app) {
