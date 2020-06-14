@@ -15,7 +15,7 @@ import org.springframework.data.annotation.Transient;
 
 @Entity
 @Table(name = "user")
-public class Admin{
+public class Admin {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

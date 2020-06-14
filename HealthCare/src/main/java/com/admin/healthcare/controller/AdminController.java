@@ -423,7 +423,6 @@ public class AdminController {
     }
 
 
-
     //Update user
     @GetMapping("/edit/{id}")
     public String showUpdateForm(@PathVariable("id") int id, Model model) {
@@ -437,11 +436,11 @@ public class AdminController {
     public String updateUser(@PathVariable("id") int id, @Valid User user,
                              Model model) {
 
-            user.setId(id);
-            user.setRole("ROLE_USER");
-            user.setPassword("user");
-            user.setEnabled(true);
-            user.setConfirmationToken("AddByAdmin");
+        user.setId(id);
+        user.setRole("ROLE_USER");
+        user.setPassword("user");
+        user.setEnabled(true);
+        user.setConfirmationToken("AddByAdmin");
 
         userRepository.save(user);
         model.addAttribute("users", userRepository.findAll());

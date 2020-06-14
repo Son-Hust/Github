@@ -23,7 +23,7 @@ public class User {
     }
 
     @NotBlank(message = "Password is required!")
-    @Size(min = 8,max = 16,message = "Enter the password that meets the following conditions:\n" +
+    @Size(min = 8, max = 16, message = "Enter the password that meets the following conditions:\n" +
             "> = 8 and <= 16 characters\n" +
             "Include uppercase, lowercase letters, numbers, and special characters")
     private String password;

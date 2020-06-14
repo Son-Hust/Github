@@ -12,7 +12,7 @@ import java.util.Collection;
 
 @Entity
 @Table(name = "user")
-public class User{
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -77,7 +77,7 @@ public class User{
     private String address;
 
     //OnetoMany
-    @OneToMany(mappedBy = "user1",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user1", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @OrderBy("user1 ASC")
     private Collection<Medicine> medicines;
 

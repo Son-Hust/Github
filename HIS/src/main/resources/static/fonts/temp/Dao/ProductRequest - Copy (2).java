@@ -13,14 +13,14 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class ProductRequest
  */
 public class ProductRequest extends HttpServlet {
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		String product=request.getParameter("p");
-		request.setAttribute("product", product);
-		RequestDispatcher rd=request.getRequestDispatcher("Product.jsp");
-		rd.forward(request,response);
-		
-	}
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        String product = request.getParameter("p");
+        request.setAttribute("product", product);
+        RequestDispatcher rd = request.getRequestDispatcher("Product.jsp");
+        rd.forward(request, response);
+
+    }
 
 }

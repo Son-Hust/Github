@@ -13,20 +13,20 @@ import javax.servlet.http.HttpSession;
  */
 @WebServlet("/Logout")
 public class Logout extends HttpServlet {
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
-		HttpSession session=request.getSession();
-		
-		session.removeAttribute("user");
-		session.invalidate();
-		
-		try {
-			response.sendRedirect("Home.jsp");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-	}
+        HttpSession session = request.getSession();
+
+        session.removeAttribute("user");
+        session.invalidate();
+
+        try {
+            response.sendRedirect("Home.jsp");
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+}

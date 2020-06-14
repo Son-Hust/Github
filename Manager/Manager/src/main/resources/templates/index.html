@@ -6,7 +6,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Users</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
@@ -37,7 +38,8 @@
                                 <td th:text="${user.email}"></td>
                                 <td th:text="${user.address}"></td>
                                 <td><a th:href="@{/user/edit/{id}(id=${user.id})}" class="btn btn-primary">Edit</a></td>
-                                <td><a onclick="return confirmAction()" th:href="@{/user/delete/{id}(id=${user.id})}" class="btn btn-primary">Delete</a></td>
+                                <td><a onclick="return confirmAction()" th:href="@{/user/delete/{id}(id=${user.id})}"
+                                       class="btn btn-primary">Delete</a></td>
                             </tr>
                             </tbody>
                         </table>

@@ -12,119 +12,115 @@ import javax.validation.constraints.NotEmpty;
 import org.springframework.data.annotation.Transient;
 
 /**
- * 
  * @author Soumyadip Chowdhury
  * @github soumyadip007
- *
  */
 @Entity
 @Table(name = "app")
 public class Appointment {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id")
-	private int id;
-	
-	@Column(name = "name", nullable = false, unique = true)
-	private String name;
-	
-	@Column(name = "email")
-	private String email;
-	
-	@Column(name = "date")
-	private String date;
-	
-	@Column(name = "time")
-	private String time;
-	
-	
-	@Column(name = "description")
-	private String description;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
+    private int id;
 
-	
-	@Column(name = "regtime")
-	@Transient
-	private String regtime;
+    @Column(name = "name", nullable = false, unique = true)
+    private String name;
 
-	
+    @Column(name = "email")
+    private String email;
 
-	public String getRegtime() {
-		return regtime;
-	}
+    @Column(name = "date")
+    private String date;
+
+    @Column(name = "time")
+    private String time;
 
 
-	public void setRegtime(String regtime) {
-		this.regtime = regtime;
-	}
+    @Column(name = "description")
+    private String description;
 
 
-	public int getId() {
-		return id;
-	}
+    @Column(name = "regtime")
+    @Transient
+    private String regtime;
 
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    public String getRegtime() {
+        return regtime;
+    }
 
 
-	public String getName() {
-		return name;
-	}
+    public void setRegtime(String regtime) {
+        this.regtime = regtime;
+    }
 
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public int getId() {
+        return id;
+    }
 
 
-	public String getEmail() {
-		return email;
-	}
+    public void setId(int id) {
+        this.id = id;
+    }
 
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public String getName() {
+        return name;
+    }
 
 
-	public String getDate() {
-		return date;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
 
-	public void setDate(String date) {
-		this.date = date;
-	}
+    public String getEmail() {
+        return email;
+    }
 
 
-	public String getTime() {
-		return time;
-	}
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
 
-	public void setTime(String time) {
-		this.time = time;
-	}
+    public String getDate() {
+        return date;
+    }
 
 
-	public String getDescription() {
-		return description;
-	}
+    public void setDate(String date) {
+        this.date = date;
+    }
 
 
-	public void setDescription(String description) {
-		this.description = description;
-	}
+    public String getTime() {
+        return time;
+    }
 
 
-	@Override
-	public String toString() {
-		return "Appointment [id=" + id + ", name=" + name + ", email=" + email + ", date=" + date + ", time=" + time
-				+ ", description=" + description + "]";
-	}
-	
-	
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+
+    public String getDescription() {
+        return description;
+    }
+
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Appointment [id=" + id + ", name=" + name + ", email=" + email + ", date=" + date + ", time=" + time
+                + ", description=" + description + "]";
+    }
+
 
 }

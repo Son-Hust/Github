@@ -28,23 +28,21 @@ public class UserController {
     private AppointmentRepository appointmentRepository;
 
 
-
-
     @GetMapping("/index")
-    public String index(Model model){
+    public String index(Model model) {
 
         // get last seen
-        String username="";
+        String username = "";
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         if (principal instanceof UserDetails) {
-            username = ((UserDetails)principal).getUsername();
-            String Pass = ((UserDetails)principal).getPassword();
-            System.out.println("One + "+username+"   "+Pass);
+            username = ((UserDetails) principal).getUsername();
+            String Pass = ((UserDetails) principal).getPassword();
+            System.out.println("One + " + username + "   " + Pass);
 
 
         } else {
             username = principal.toString();
-            System.out.println("Two + "+username);
+            System.out.println("Two + " + username);
         }
 
         User user = userRepository.findByEmail(username);
@@ -52,23 +50,22 @@ public class UserController {
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date now = new Date();
 
-        String log=now.toString();
+        String log = now.toString();
 
         user.setLastseen(log);
 
         userRepository.save(user);
 
 
+        Appointment obj = new Appointment();
 
-        Appointment obj=new Appointment();
-
-        obj.setName(user.getFirstName()+" "+user.getLastName());
+        obj.setName(user.getFirstName() + " " + user.getLastName());
 
         obj.setEmail(user.getEmail());
 
         System.out.println(obj);
 
-        model.addAttribute("app",obj);
+        model.addAttribute("app", obj);
 
         return "user/index";
     }
@@ -85,63 +82,62 @@ public class UserController {
 
 
     @GetMapping("/about")
-    public String about(Model model){
+    public String about(Model model) {
 
         // get last seen
-        String username="";
+        String username = "";
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         if (principal instanceof UserDetails) {
-            username = ((UserDetails)principal).getUsername();
-            String Pass = ((UserDetails)principal).getPassword();
-            System.out.println("One + "+username+"   "+Pass);
+            username = ((UserDetails) principal).getUsername();
+            String Pass = ((UserDetails) principal).getPassword();
+            System.out.println("One + " + username + "   " + Pass);
 
 
         } else {
             username = principal.toString();
-            System.out.println("Two + "+username);
+            System.out.println("Two + " + username);
         }
 
-       User user = userRepository.findByEmail(username);
+        User user = userRepository.findByEmail(username);
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date now = new Date();
 
-        String log=now.toString();
+        String log = now.toString();
 
         user.setLastseen(log);
 
         userRepository.save(user);
 
 
+        Appointment obj = new Appointment();
 
-        Appointment obj=new Appointment();
-
-        obj.setName(user.getFirstName()+" "+user.getLastName());
+        obj.setName(user.getFirstName() + " " + user.getLastName());
 
         obj.setEmail(user.getEmail());
 
         System.out.println(obj);
 
-        model.addAttribute("app",obj);
+        model.addAttribute("app", obj);
 
         return "user/about";
     }
 
     @GetMapping("/blog-single")
-    public String bs(Model model){
+    public String bs(Model model) {
 
         // get last seen
-        String username="";
+        String username = "";
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         if (principal instanceof UserDetails) {
-            username = ((UserDetails)principal).getUsername();
-            String Pass = ((UserDetails)principal).getPassword();
-            System.out.println("One + "+username+"   "+Pass);
+            username = ((UserDetails) principal).getUsername();
+            String Pass = ((UserDetails) principal).getPassword();
+            System.out.println("One + " + username + "   " + Pass);
 
 
         } else {
             username = principal.toString();
-            System.out.println("Two + "+username);
+            System.out.println("Two + " + username);
         }
 
         User user = userRepository.findByEmail(username);
@@ -149,42 +145,41 @@ public class UserController {
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date now = new Date();
 
-        String log=now.toString();
+        String log = now.toString();
 
         user.setLastseen(log);
 
         userRepository.save(user);
 
 
+        Appointment obj = new Appointment();
 
-        Appointment obj=new Appointment();
-
-        obj.setName(user.getFirstName()+" "+user.getLastName());
+        obj.setName(user.getFirstName() + " " + user.getLastName());
 
         obj.setEmail(user.getEmail());
 
         System.out.println(obj);
 
-        model.addAttribute("app",obj);
+        model.addAttribute("app", obj);
 
         return "user/blog-single";
     }
 
     @GetMapping("/blog")
-    public String blog(Model model){
+    public String blog(Model model) {
 
         // get last seen
-        String username="";
+        String username = "";
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         if (principal instanceof UserDetails) {
-            username = ((UserDetails)principal).getUsername();
-            String Pass = ((UserDetails)principal).getPassword();
-            System.out.println("One + "+username+"   "+Pass);
+            username = ((UserDetails) principal).getUsername();
+            String Pass = ((UserDetails) principal).getPassword();
+            System.out.println("One + " + username + "   " + Pass);
 
 
         } else {
             username = principal.toString();
-            System.out.println("Two + "+username);
+            System.out.println("Two + " + username);
         }
 
         User user = userRepository.findByEmail(username);
@@ -192,42 +187,41 @@ public class UserController {
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date now = new Date();
 
-        String log=now.toString();
+        String log = now.toString();
 
         user.setLastseen(log);
 
         userRepository.save(user);
 
 
+        Appointment obj = new Appointment();
 
-        Appointment obj=new Appointment();
-
-        obj.setName(user.getFirstName()+" "+user.getLastName());
+        obj.setName(user.getFirstName() + " " + user.getLastName());
 
         obj.setEmail(user.getEmail());
 
         System.out.println(obj);
 
-        model.addAttribute("app",obj);
+        model.addAttribute("app", obj);
 
         return "user/blog";
     }
 
     @GetMapping("/contact")
-    public String contact(Model model){
+    public String contact(Model model) {
 
         // get last seen
-        String username="";
+        String username = "";
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         if (principal instanceof UserDetails) {
-            username = ((UserDetails)principal).getUsername();
-            String Pass = ((UserDetails)principal).getPassword();
-            System.out.println("One + "+username+"   "+Pass);
+            username = ((UserDetails) principal).getUsername();
+            String Pass = ((UserDetails) principal).getPassword();
+            System.out.println("One + " + username + "   " + Pass);
 
 
         } else {
             username = principal.toString();
-            System.out.println("Two + "+username);
+            System.out.println("Two + " + username);
         }
 
         User user = userRepository.findByEmail(username);
@@ -235,43 +229,42 @@ public class UserController {
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date now = new Date();
 
-        String log=now.toString();
+        String log = now.toString();
 
         user.setLastseen(log);
 
-       userRepository.save(user);
+        userRepository.save(user);
 
 
+        Appointment obj = new Appointment();
 
-        Appointment obj=new Appointment();
-
-        obj.setName(user.getFirstName()+" "+user.getLastName());
+        obj.setName(user.getFirstName() + " " + user.getLastName());
 
         obj.setEmail(user.getEmail());
 
         System.out.println(obj);
 
-        model.addAttribute("app",obj);
+        model.addAttribute("app", obj);
 
         return "user/contact";
     }
 
 
     @GetMapping("/department-single")
-    public String d(Model model){
+    public String d(Model model) {
 
         // get last seen
-        String username="";
+        String username = "";
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         if (principal instanceof UserDetails) {
-            username = ((UserDetails)principal).getUsername();
-            String Pass = ((UserDetails)principal).getPassword();
-            System.out.println("One + "+username+"   "+Pass);
+            username = ((UserDetails) principal).getUsername();
+            String Pass = ((UserDetails) principal).getPassword();
+            System.out.println("One + " + username + "   " + Pass);
 
 
         } else {
             username = principal.toString();
-            System.out.println("Two + "+username);
+            System.out.println("Two + " + username);
         }
 
         User user = userRepository.findByEmail(username);
@@ -279,43 +272,42 @@ public class UserController {
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date now = new Date();
 
-        String log=now.toString();
+        String log = now.toString();
 
         user.setLastseen(log);
 
         userRepository.save(user);
 
 
+        Appointment obj = new Appointment();
 
-        Appointment obj=new Appointment();
-
-        obj.setName(user.getFirstName()+" "+user.getLastName());
+        obj.setName(user.getFirstName() + " " + user.getLastName());
 
         obj.setEmail(user.getEmail());
 
         System.out.println(obj);
 
-        model.addAttribute("app",obj);
+        model.addAttribute("app", obj);
 
 
         return "user/department-single";
     }
 
     @GetMapping("/departments")
-    public String dep(Model model){
+    public String dep(Model model) {
 
         // get last seen
-        String username="";
+        String username = "";
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         if (principal instanceof UserDetails) {
-            username = ((UserDetails)principal).getUsername();
-            String Pass = ((UserDetails)principal).getPassword();
-            System.out.println("One + "+username+"   "+Pass);
+            username = ((UserDetails) principal).getUsername();
+            String Pass = ((UserDetails) principal).getPassword();
+            System.out.println("One + " + username + "   " + Pass);
 
 
         } else {
             username = principal.toString();
-            System.out.println("Two + "+username);
+            System.out.println("Two + " + username);
         }
 
         User user = userRepository.findByEmail(username);
@@ -323,42 +315,41 @@ public class UserController {
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date now = new Date();
 
-        String log=now.toString();
+        String log = now.toString();
 
         user.setLastseen(log);
 
         userRepository.save(user);
 
 
+        Appointment obj = new Appointment();
 
-        Appointment obj=new Appointment();
-
-        obj.setName(user.getFirstName()+" "+user.getLastName());
+        obj.setName(user.getFirstName() + " " + user.getLastName());
 
         obj.setEmail(user.getEmail());
 
         System.out.println(obj);
 
-        model.addAttribute("app",obj);
+        model.addAttribute("app", obj);
 
         return "user/departments";
     }
 
     @GetMapping("/doctor")
-    public String doctor(Model model){
+    public String doctor(Model model) {
 
         // get last seen
-        String username="";
+        String username = "";
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         if (principal instanceof UserDetails) {
-            username = ((UserDetails)principal).getUsername();
-            String Pass = ((UserDetails)principal).getPassword();
-            System.out.println("One + "+username+"   "+Pass);
+            username = ((UserDetails) principal).getUsername();
+            String Pass = ((UserDetails) principal).getPassword();
+            System.out.println("One + " + username + "   " + Pass);
 
 
         } else {
             username = principal.toString();
-            System.out.println("Two + "+username);
+            System.out.println("Two + " + username);
         }
 
         User user = userRepository.findByEmail(username);
@@ -366,23 +357,22 @@ public class UserController {
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date now = new Date();
 
-        String log=now.toString();
+        String log = now.toString();
 
         user.setLastseen(log);
 
         userRepository.save(user);
 
 
+        Appointment obj = new Appointment();
 
-        Appointment obj=new Appointment();
-
-        obj.setName(user.getFirstName()+" "+user.getLastName());
+        obj.setName(user.getFirstName() + " " + user.getLastName());
 
         obj.setEmail(user.getEmail());
 
         System.out.println(obj);
 
-        model.addAttribute("app",obj);
+        model.addAttribute("app", obj);
 
 
         return "user/doctor";

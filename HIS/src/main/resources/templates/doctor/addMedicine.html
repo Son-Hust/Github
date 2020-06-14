@@ -21,18 +21,35 @@
                 <form action="#" th:action="@{/user/add}" th:object="${user}" method="post">
                     <div class="form-group col-md-8">
                         <label for="meName" class="col-form-label">Drug Name</label> <input type="text"
-                                                                                              th:field="*{meName}" class="form-control" id="meName" placeholder="Enter Drug Name">
+                                                                                            th:field="*{meName}"
+                                                                                            class="form-control"
+                                                                                            id="meName"
+                                                                                            placeholder="Enter Drug Name">
                         <span th:if="${#fields.hasErrors('meName')}" th:errors="*{meName}" class="text-danger"></span>
                     </div>
                     <div class="form-group col-md-8">
-                        <label for="dosage" class="col-form-label">Dosage</label> <input type="text" th:field="*{dosage}" class="form-control" id="dosage" placeholder="Enter Dosage"> <span th:if="${#fields.hasErrors('dosage')}" th:errors="*{dosage}" class="text-danger"></span>
+                        <label for="dosage" class="col-form-label">Dosage</label> <input type="text"
+                                                                                         th:field="*{dosage}"
+                                                                                         class="form-control"
+                                                                                         id="dosage"
+                                                                                         placeholder="Enter Dosage">
+                        <span th:if="${#fields.hasErrors('dosage')}" th:errors="*{dosage}" class="text-danger"></span>
                     </div>
 
                     <div class="form-group col-md-8">
-                        <label for="frequency" class="col-form-label">Frequency</label> <input type="text" th:field="*{frequency}" class="form-control" id="frequency" placeholder="Enter Frequency"> <span th:if="${#fields.hasErrors('frequency')}" th:errors="*{frequency}" class="text-danger"></span>
+                        <label for="frequency" class="col-form-label">Frequency</label> <input type="text"
+                                                                                               th:field="*{frequency}"
+                                                                                               class="form-control"
+                                                                                               id="frequency"
+                                                                                               placeholder="Enter Frequency">
+                        <span th:if="${#fields.hasErrors('frequency')}" th:errors="*{frequency}"
+                              class="text-danger"></span>
                     </div>
                     <div class="form-group col-md-8">
-                        <label for="note" class="col-form-label">Note</label> <input type="text" th:field="*{note}" class="form-control" id="note" placeholder="Enter Note"> <span th:if="${#fields.hasErrors('note')}" th:errors="*{note}" class="text-danger"></span>
+                        <label for="note" class="col-form-label">Note</label> <input type="text" th:field="*{note}"
+                                                                                     class="form-control" id="note"
+                                                                                     placeholder="Enter Note"> <span
+                            th:if="${#fields.hasErrors('note')}" th:errors="*{note}" class="text-danger"></span>
                     </div>
 
                     <div class="col-md-6">

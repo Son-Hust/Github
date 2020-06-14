@@ -14,41 +14,39 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 
  * @author Soumyadip Chowdhury
- *
  */
 @WebServlet("/deletejob")
 public class deletejob extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-  
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-	String ev=request.getParameter("ev");
-		
+    private static final long serialVersionUID = 1L;
 
-		try {
-			Class.forName("com.mysql.jdbc.Driver");
-		
-			ServletContext ct=getServletContext();
-			
-			Connection con=(Connection) DriverManager.getConnection(ct.getInitParameter("path"),ct.getInitParameter("user"),ct.getInitParameter("pass"));
-			
-		
-			PreparedStatement st;
-		
-			st = con.prepareStatement("delete from job where id=?");
-			st.setString(1,ev);
-			int i=0;
-			i=st.executeUpdate();
-		
-			
-			response.sendRedirect("adminjobs.jsp");
-			
-		} catch (SQLException | ClassNotFoundException e ) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // TODO Auto-generated method stub
+        String ev = request.getParameter("ev");
+
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            ServletContext ct = getServletContext();
+
+            Connection con = (Connection) DriverManager.getConnection(ct.getInitParameter("path"), ct.getInitParameter("user"), ct.getInitParameter("pass"));
+
+
+            PreparedStatement st;
+
+            st = con.prepareStatement("delete from job where id=?");
+            st.setString(1, ev);
+            int i = 0;
+            i = st.executeUpdate();
+
+
+            response.sendRedirect("adminjobs.jsp");
+
+        } catch (SQLException | ClassNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
 
 }

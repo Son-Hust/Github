@@ -10,32 +10,28 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 
  * @author Soumyadip Chowdhury
- *
  */
 @WebServlet("/details")
 public class details extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
-   
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    private static final long serialVersionUID = 1L;
 
 
-		String data=request.getParameter("id");
-		request.setAttribute("id", data);
-		RequestDispatcher rd=request.getRequestDispatcher("details.jsp");
+    /**
+     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+     */
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-	//	System.out.println(data);
-		rd.forward(request,response);
-		
-	
-	}
 
+        String data = request.getParameter("id");
+        request.setAttribute("id", data);
+        RequestDispatcher rd = request.getRequestDispatcher("details.jsp");
+
+        //	System.out.println(data);
+        rd.forward(request, response);
+
+
+    }
 
 
 }

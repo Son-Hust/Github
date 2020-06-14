@@ -9,7 +9,7 @@ import java.util.List;
 @Repository("adminRepository")
 public interface AdminRepository extends JpaRepository<Admin, Long> {
 
-	Admin findByEmail(String user);
-	
-	List<Admin> findByRole(String user);
+    Admin findByEmail(String user);
+
+    List<Admin> findByRole(String user);
 }

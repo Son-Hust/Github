@@ -9,8 +9,7 @@ public class LoginController {
 
 
     @RequestMapping("/showMyLoginPage")
-    public String showHome()
-    {
+    public String showHome() {
 
         return "login";
     }

@@ -7,12 +7,12 @@ import java.util.List;
 public interface AdminService {
 
 
-	public List<Admin> findByRole(String user);
+    public List<Admin> findByRole(String user);
 
-	public Admin findByEmail(String user);
-	
-	public List<Admin> findAll();
+    public Admin findByEmail(String user);
 
-	public void save(Admin admin);
-	
+    public List<Admin> findAll();
+
+    public void save(Admin admin);
+
 }
